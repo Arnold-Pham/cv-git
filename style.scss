@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #DDD;
+    cursor: default;
+
+    header {
+        background: #222;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 3rem;
+        padding: 1px;
+        position: sticky;
+        top: 0;
+
+        h1 {
+            color: #FFF;
+            font-family: 'Major Mono Display', monospace;
+            padding: 0 1rem;
+        }
+
+        nav {
+            ul {
+                display: flex;
+
+                li {
+                    list-style: none;
+                    margin-left: 2px;
+
+                    a {
+                        text-decoration: none;
+                        color: #FFF;
+                        display: flex;
+                        align-items: center;
+                        background: #444;
+                        height: 3rem;
+                        padding: 0 1rem;
+
+                        &:hover {
+                            background: #666;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+
+        section {
+            background: #FAFAFA;
+            border: 1px solid #666;
+            border-radius: 1rem;
+            margin: 2rem 0;
+            padding: 1rem;
+
+            h1 {
+                margin: .5rem 0 1rem;
+                padding: 1rem;
+                text-align: center;
+            }
+
+            hr {
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                border-bottom: .2rem dotted #666;
+                margin: 0 auto;
+            }
+
+            img {
+                border: 1px solid #DDD;
+                border-radius: 1rem;
+                width: 50%;
+                display: block;
+                margin: 1rem auto;
+            }
+
+            article {
+                padding: 1rem;
+                margin-bottom: 1rem;
+
+                p {
+                    text-align: justify;
+
+                    a {
+                        text-decoration: none;
+                        color: #5AF;
+                    }
+                }
+            }
+
+            .form {
+                hr {
+                    border-bottom: .1rem solid #DDD;
+                    width: 50%;
+                    margin: .5rem 0;
+                }
+
+                &_element {
+                    display: grid;
+                    grid-row: inherit;
+                    grid-column: 3fr 1fr;
+                    grid-template-areas:
+                        "a b"
+                        "c c"
+                        "d d";
+                    margin: .5rem 0;
+                    padding: 1rem;
+                    color: #222;
+                    background: #EEE;
+                    border: 1px solid #FFF;
+                    border-radius: .5rem;
+
+                    &_titre {
+                        grid-area: a;
+                        margin-bottom: .25rem;
+                    }
+
+                    &_date {
+                        grid-area: b;
+                        text-align: end;
+                    }
+
+                    &_info {
+                        grid-area: c;
+                    }
+                    
+                    &_info1 {
+                        grid-area: d;
+                        background: #DDD;
+                        margin: .25rem 0;
+                        padding: .25rem;
+                        border-radius: .25rem;
+                    }
+
+                    &_lieu {
+                        grid-area: d;
+                    }
+
+                    &:hover {
+                        background: #DDD;
+
+                        .form_element_info1 {
+                            background: #CCC;
+                        }
+                    }
+                }
+
+                table {
+                    margin-top: 1rem;
+
+                    tr {
+                        padding: 10rem;
+
+                        td {
+                            padding: 0 .5rem;
+                            align-items: baseline;
+                        }
+
+                        .bar {
+                            border-left: 1px solid #AAA;
+                        }
+                    }
+                }
+            }
+
+            .pdf {
+                p {
+                    text-align: center;
+
+                    a {
+                        text-decoration: none;
+                        padding: .1rem .3rem;
+                        margin-left: .5rem;
+                        color: #5AF;
+                        background: #DDD;
+                        border: 1px solid #AAA;
+                        border-radius: .2rem;
+
+                        i {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #bouton {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        text-decoration: none;
+        color: #222;
+
+        &:hover {
+            color: #666;
+        }
+
+        i {
+            font-size: 30px;
+        }
+    }
+
+    footer {
+        background: #444;
+        color: #FFF;
+        text-align: center;
+        padding: 3rem 0 1rem;
+    }
+}

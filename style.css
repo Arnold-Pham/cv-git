@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #DDD;
+  cursor: default;
+}
+
+body header {
+  background: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 3rem;
+  padding: 1px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+body header h1 {
+  color: #FFF;
+  font-family: 'Major Mono Display', monospace;
+  padding: 0 1rem;
+}
+
+body header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header nav ul li {
+  list-style: none;
+  margin-left: 2px;
+}
+
+body header nav ul li a {
+  text-decoration: none;
+  color: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #444;
+  height: 3rem;
+  padding: 0 1rem;
+}
+
+body header nav ul li a:hover {
+  background: #666;
+}
+
+body main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+body main section {
+  background: #FAFAFA;
+  border: 1px solid #666;
+  border-radius: 1rem;
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+body main section h1 {
+  margin: .5rem 0 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+body main section hr {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: .2rem dotted #666;
+  margin: 0 auto;
+}
+
+body main section img {
+  border: 1px solid #DDD;
+  border-radius: 1rem;
+  width: 50%;
+  display: block;
+  margin: 1rem auto;
+}
+
+body main section article {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+body main section article p {
+  text-align: justify;
+}
+
+body main section article p a {
+  text-decoration: none;
+  color: #5AF;
+}
+
+body main section .form hr {
+  border-bottom: .1rem solid #DDD;
+  width: 50%;
+  margin: .5rem 0;
+}
+
+body main section .form_element {
+  display: -ms-grid;
+  display: grid;
+  grid-row: inherit;
+  grid-column: 3fr 1fr;
+      grid-template-areas: "a b" "c c" "d d";
+  margin: .5rem 0;
+  padding: 1rem;
+  color: #222;
+  background: #EEE;
+  border: 1px solid #FFF;
+  border-radius: .5rem;
+}
+
+body main section .form_element_titre {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: a;
+  margin-bottom: .25rem;
+}
+
+body main section .form_element_date {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: b;
+  text-align: end;
+}
+
+body main section .form_element_info {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: c;
+}
+
+body main section .form_element_info1 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: d;
+  background: #DDD;
+  margin: .25rem 0;
+  padding: .25rem;
+  border-radius: .25rem;
+}
+
+body main section .form_element_lieu {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: d;
+}
+
+body main section .form_element:hover {
+  background: #DDD;
+}
+
+body main section .form_element:hover .form_element_info1 {
+  background: #CCC;
+}
+
+body main section .form table {
+  margin-top: 1rem;
+}
+
+body main section .form table tr {
+  padding: 10rem;
+}
+
+body main section .form table tr td {
+  padding: 0 .5rem;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+body main section .form table tr .bar {
+  border-left: 1px solid #AAA;
+}
+
+body main section .pdf p {
+  text-align: center;
+}
+
+body main section .pdf p a {
+  text-decoration: none;
+  padding: .1rem .3rem;
+  margin-left: .5rem;
+  color: #5AF;
+  background: #DDD;
+  border: 1px solid #AAA;
+  border-radius: .2rem;
+}
+
+body main section .pdf p a i {
+  font-size: 1rem;
+}
+
+body #bouton {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  text-decoration: none;
+  color: #222;
+}
+
+body #bouton:hover {
+  color: #666;
+}
+
+body #bouton i {
+  font-size: 30px;
+}
+
+body footer {
+  background: #444;
+  color: #FFF;
+  text-align: center;
+  padding: 3rem 0 1rem;
+}
+/*# sourceMappingURL=style.css.map */
