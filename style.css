@@ -126,7 +126,9 @@ body main section .form_element {
   display: grid;
   grid-row: inherit;
   grid-column: 3fr 1fr;
-      grid-template-areas: "a b" "c c" "d d";
+      grid-template-areas: "a b"
+ "c c"
+ "d d";
   margin: .5rem 0;
   padding: 1rem;
   color: #222;
@@ -199,24 +201,6 @@ body main section .form table tr td {
 
 body main section .form table tr .bar {
   border-left: 1px solid #AAA;
-}
-
-body main section .pdf p {
-  text-align: center;
-}
-
-body main section .pdf p a {
-  text-decoration: none;
-  padding: .1rem .3rem;
-  margin-left: .5rem;
-  color: #5AF;
-  background: #DDD;
-  border: 1px solid #AAA;
-  border-radius: .2rem;
-}
-
-body main section .pdf p a i {
-  font-size: 1rem;
 }
 
 body #bouton {
